@@ -36,7 +36,7 @@ sudo apt install php-cli php-sqlite3 php-curl -y
 
     ```bash
     git clone https://github.com/BryanApolonio/Deep-Index.git
-    cd deep-index
+    cd Deep-Index
     ```
 
 2.  **Set Permissions:**
