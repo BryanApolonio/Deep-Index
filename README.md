@@ -39,11 +39,12 @@ sudo apt install php-cli php-sqlite3 php-curl -y
     cd Deep-Index
     ```
 
-2.  **Set Permissions:**
-    Ensure the `data/` directory is writable:
+2.  **Directory Initialization:**
+    The data/ folder must exist and be writable for the SQLite database to be initialized. If the folder is missing, create it:
 
     ```bash
-    chmod 775 data/
+    mkdir -p data
+    chmod 775 data
     ```
 
 3.  **Run the server:**
