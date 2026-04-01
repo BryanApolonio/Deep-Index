@@ -1,5 +1,5 @@
 # Deep Index
-> A simple .onion link aggregator and high-performance search engine with a brutalist design.
+A simple .onion link aggregator and high-performance search engine with a brutalist design.
 
 <p align="center">
   <img src="./img/home.png" width="48%" />
@@ -74,4 +74,4 @@ This project functions as a gateway to the distributed web. We acknowledge and c
 
 **Deep Index** uses the [Ahmia Public Onion List](https://ahmia.fi/onions/) as its primary data feed to maintain an updated directory of hidden services.
 
-> **Disclaimer:** This tool is for educational and research purposes only. Use it responsibly and at your own risk.
+**Disclaimer:** This tool is for educational and research purposes only. Use it responsibly and at your own risk.
