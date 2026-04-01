@@ -6,8 +6,6 @@
   <img src="./img/results.png" width="48%" />
 </p>
 
----
-
 ## Overview
 **Deep Index** is a lightweight PHP-based search engine designed to crawl and cache hidden services from the Deep Web. It prioritizes speed, a brutalist "dark-mode" aesthetics, and zero-bloat functionality.
 
@@ -69,8 +67,6 @@ sudo apt install php-cli php-sqlite3 php-curl -y
 ├── index.php               # Entry Point (Home)
 └── results.php             # Data Grid View (Search)
 ```
-
------
 
 ## Credits & Data Source
 
