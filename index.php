@@ -9,6 +9,7 @@ require_once 'includes/engine.php';
     <title>DeepSearch | Onion Directory</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+    
 <body>
     <div class="app-container centered-view">
         <header>
