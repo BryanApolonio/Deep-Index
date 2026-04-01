@@ -45,9 +45,11 @@ $links = fetchOnionLinks($query);
                 <?php endforeach; ?>
             <?php endif; ?>
           </main>
+        
         <footer class="simple-footer">
        Source: Ahmia Public Database | <a href="https://ahmia.fi/onions" target="_blank" class="footer-link">ahmia.fi/onions</a>
      </footer>
+        
     </div>
 </body>
 </html>
