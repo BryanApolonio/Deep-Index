@@ -2,8 +2,8 @@
 > A high-performance, brutalist .onion link aggregator and search engine base.
 
 <p align="center">
-  <img src="./assets/img/home.png" width="48%" />
-  <img src="./assets/img/results.png" width="48%" />
+  <img src="./img/home.png" width="48%" />
+  <img src="./img/results.png" width="48%" />
 </p>
 
 ---
