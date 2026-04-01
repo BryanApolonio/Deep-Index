@@ -1,5 +1,5 @@
-# 🔍 DEEP INDEX
-> A high-performance, brutalist .onion link aggregator and search engine base.
+# Deep Index
+> A simple .onion link aggregator and high-performance search engine with a brutalist design.
 
 <p align="center">
   <img src="./img/home.png" width="48%" />
@@ -8,18 +8,18 @@
 
 ---
 
-## 💀 Overview
+## Overview
 **Deep Index** is a lightweight PHP-based search engine designed to crawl and cache hidden services from the Deep Web. It prioritizes speed, a brutalist "dark-mode" aesthetics, and zero-bloat functionality.
 
 The engine synchronizes with the **[Ahmia.fi](https://ahmia.fi/onions/)** public database to provide a curated list of active Onion V3 nodes, storing them locally for instant access.
 
-## ⚡ Features
+## Features
 - **Automated Sync:** Intelligent caching system that refreshes the index periodically.
 - **SQLite3 Backend:** Fast, file-based persistence (no heavy SQL setup required).
 - **Onion V3 Ready:** Optimized regex filters for 56-character v3 addresses.
 - **Minimalist UI:** A cold, terminal-inspired interface focused on logic and readability.
 
-## 🛠️ Prerequisites
+## Prerequisites
 To run this project on your local machine or a Linux server, you need:
 
 * **PHP 8.1+**
@@ -32,7 +32,7 @@ sudo apt update
 sudo apt install php-cli php-sqlite3 php-curl -y
 ````
 
-## 🚀 Getting Started
+## Getting Started
 
 1.  **Clone the repository:**
 
@@ -56,7 +56,7 @@ sudo apt install php-cli php-sqlite3 php-curl -y
 
     Open `http://localhost:8000` in your browser.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ├── assets/
@@ -72,12 +72,10 @@ sudo apt install php-cli php-sqlite3 php-curl -y
 
 -----
 
-## 📜 Credits & Data Source
+## Credits & Data Source
 
 This project functions as a gateway to the distributed web. We acknowledge and credit **[Ahmia.fi](https://ahmia.fi/)** for their invaluable contribution to the privacy ecosystem.
 
 **Deep Index** uses the [Ahmia Public Onion List](https://ahmia.fi/onions/) as its primary data feed to maintain an updated directory of hidden services.
 
 > **Disclaimer:** This tool is for educational and research purposes only. Use it responsibly and at your own risk.
-
------
