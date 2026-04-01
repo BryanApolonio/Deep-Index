@@ -1,0 +1,179 @@
+:root {
+    --bg-main: #0a0a0b;
+    --bg-card: #111113;
+    --accent: #22c55e;
+    --border: #1f1f22;
+    --text-primary: #f4f4f5;
+    --text-secondary: #71717a;
+    --transition: 0.2s ease-in-out;
+}
+
+body { 
+    background-color: var(--bg-main); 
+    color: var(--text-primary); 
+    font-family: 'Inter', 'Segoe UI', monospace;
+    line-height: 1.6;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    min-width: 400px;
+}
+
+.app-container { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 2rem; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa no mínimo 100% da altura da janela */
+}
+
+.logo { 
+    font-size: 3.5rem; 
+    font-weight: 800; 
+    letter-spacing: -0.05em; 
+    text-transform: uppercase;
+    font-style: italic;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.logo span { color: var(--accent); }
+
+.subtitle {
+    font-size: 0.7rem; 
+    color: var(--text-secondary); 
+    margin-top: 0.5rem;
+    letter-spacing: 0.1em;
+}
+
+.input-group {
+    display: flex;
+    gap: 3.5rem;
+    background: var(--bg-card);
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color var(--transition);
+    margin-bottom: 5px;
+}
+
+.input-group:focus-within { border-color: var(--accent); }
+
+.input-group input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    outline: none;
+    font-family: inherit;
+}
+
+.btn-execute {
+    background: var(--accent);
+    color: #000;
+    border: none;
+    padding: 0 1.2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: opacity var(--transition);
+}
+
+.btn-execute:hover { opacity: 0.8; }
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.link-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 5px;
+    transition: transform var(--transition), border-color var(--transition);
+}
+
+.link-card:hover { 
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.card-tag {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.onion-address {
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    word-break: break-all;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 5rem;
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+.centered-view {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centered-view .input-group { margin-bottom: 10rem; }
+.centered-view .logo { font-size: 3.5rem; }
+.centered-view .search-section { width: 100%; max-width: 600px; margin-top: 1rem; }
+.centered-view .simple-footer { position: absolute; bottom: 0.01rem; width: 100%; }
+
+.results-view .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0.1rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+}
+
+.results-view .search-section { flex: 1; max-width: 100%; }
+
+.simple-footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+@media (max-width: 757px) {
+    .results-view .top-bar { flex-direction: column; align-items: center; gap: 1rem; }
+    .results-view .input-group { width: 100%; }
+    .centered-view .logo { font-size: 2.5rem; }
+}
