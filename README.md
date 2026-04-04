@@ -101,4 +101,3 @@ This project functions as a gateway to the distributed web. We acknowledge and c
 **Deep Index** uses the [Ahmia Public Onion List](https://ahmia.fi/onions/) as its primary data feed to maintain an updated directory of hidden services.
 
 **Disclaimer:** This tool is for educational and research purposes only. Use it responsibly and at your own risk.
-```
