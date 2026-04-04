@@ -18,17 +18,42 @@ The engine synchronizes with the **[Ahmia.fi](https://ahmia.fi/onions/)** public
 - **Minimalist UI:** A cold, terminal-inspired interface focused on logic and readability.
 
 ## Prerequisites
-To run this project on your local machine or a Linux server, you need:
+To run this project on your local machine or a server, you need:
 
 * **PHP 8.1+**
 * **PHP Extensions:** `php-sqlite3`, `php-curl`
 * **Web Server:** Apache, Nginx, or the PHP built-in server.
 
-### Installation (Debian/Ubuntu/MX Linux)
+## Installation
+
+### macOS
+```bash
+# Install Homebrew (if not already installed)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install PHP and dependencies
+brew install php curl
+
+# Verify installation
+php -v
+```
+
+### Ubuntu/Debian/MX Linux
 ```bash
 sudo apt update
 sudo apt install php-cli php-sqlite3 php-curl -y
-````
+
+# Verify installation
+php -v
+```
+
+### Fedora
+```bash
+sudo dnf install php php-sqlite php-curl -y
+
+# Verify installation
+php -v
+```
 
 ## Getting Started
 
@@ -76,3 +101,4 @@ This project functions as a gateway to the distributed web. We acknowledge and c
 **Deep Index** uses the [Ahmia Public Onion List](https://ahmia.fi/onions/) as its primary data feed to maintain an updated directory of hidden services.
 
 **Disclaimer:** This tool is for educational and research purposes only. Use it responsibly and at your own risk.
+```
