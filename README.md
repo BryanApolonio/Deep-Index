@@ -38,7 +38,7 @@ brew install php curl
 php -v
 ```
 
-### Ubuntu/Debian/MX Linux
+### Ubuntu/Debian
 ```bash
 sudo apt update
 sudo apt install php-cli php-sqlite3 php-curl -y
