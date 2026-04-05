@@ -33,26 +33,17 @@ To run this project on your local machine or a server, you need:
 
 # Install PHP and dependencies
 brew install php curl
-
-# Verify installation
-php -v
 ```
 
 ### Ubuntu/Debian
 ```bash
 sudo apt update
 sudo apt install php-cli php-sqlite3 php-curl -y
-
-# Verify installation
-php -v
 ```
 
 ### Fedora
 ```bash
 sudo dnf install php php-sqlite php-curl -y
-
-# Verify installation
-php -v
 ```
 
 ## Getting Started
