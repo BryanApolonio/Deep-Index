@@ -40,7 +40,7 @@ brew install php curl
 sudo apt install php-cli php-sqlite3 php-curl -y
 ```
 
-### Fedora
+### Fedora/Red Hat
 ```bash
 sudo dnf install php php-sqlite php-curl -y
 ```
